@@ -12,6 +12,7 @@ This will launch the IPython server and let you open the `SimpleModelDemo` noteb
 
 
 ## Dependencies
+* Microsoft Excel
 * Rhodium
 * Python + IPython Notebook
 
