@@ -1,5 +1,19 @@
-# Robust Decision Making: A Simple Model
+# A Simple RDM Model
 This is an implementation of a simple model to be used with [Rhodium](https://github.com/Project-Platypus/Rhodium/), a python-based Robust Decision Making (RDM) framework. 
+
+## Setup
+Run the command line from this repo and type:
+
+```
+$ jupyter notebook
+```
+
+This will launch the IPython server and let you open the `SimpleModelDemo` notebook.
+
+
+## Dependencies
+* Rhodium
+* Python + IPython Notebook
 
 ## Driving Excel Models
 ## A Python Model
