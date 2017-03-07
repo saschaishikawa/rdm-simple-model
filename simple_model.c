@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void simple_model(double Var1, double Var2, double Var3, double Var4, double Var5, double Var6, double Var7, double Var8, double Var9, double Var10, double* output ) {
+double simple_model(double Var1, double Var2, double Var3, double Var4, double Var5, double Var6, double Var7, double Var8, double Var9, double Var10) {
   // handle some internal calculations
   double Expression1 = Var1 * 0.336218764;
   double Expression2 = Var2 * 0.75222251;
@@ -14,6 +14,7 @@ void simple_model(double Var1, double Var2, double Var3, double Var4, double Var
   double Expression10 = Var10 * 0.716986761;
 
   // evaluate outputs
+  double *output;
   output[0] = Expression1 + Expression2 + Expression3;
   output[1] = Expression4 + Expression5 + Expression6;
   output[2] = Expression7 + Expression8;
@@ -26,6 +27,8 @@ void simple_model(double Var1, double Var2, double Var3, double Var4, double Var
   printf("Input: %.f %.f %.f %.f %.f %.f %.f %.f %.f %.f\n", Var1, Var2, Var3, Var4, Var5, Var6, Var7, Var8, Var9, Var10);
   printf("Output: %.8f %.8f %.8f %.8f %.8f\n", output[0], output[1], output[2], output[3], output[4]);
   // return [ Output1, Output2, Output3, Output4, Output5 ]
+
+  return output[0];
 
 }
 
@@ -45,7 +48,7 @@ int main() {
 
 
   // evaluate
-  simple_model(Var1, Var2, Var3, Var4, Var5, Var6, Var7, Var8, Var9, Var10, output);
-  // printf("%f\n", simple_model(Var1, Var2, Var3, Var4, Var5, Var6, Var7, Var8, Var9, Var10) );
+  // simple_model(Var1, Var2, Var3, Var4, Var5, Var6, Var7, Var8, Var9, Var10, output);
+  printf("%f\n", simple_model(Var1, Var2, Var3, Var4, Var5, Var6, Var7, Var8, Var9, Var10) );
 
 }
