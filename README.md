@@ -1,5 +1,5 @@
 # A Simple RDM Model
-This is an implementation of a simple model to be used with [Rhodium](https://github.com/Project-Platypus/Rhodium/), a python-based Robust Decision Making (RDM) framework. 
+This is an implementation of a simple model to be used with [Rhodium](https://github.com/RANDCorporation/Rhodium/), a python-based Robust Decision Making (RDM) framework. 
 
 ## Setup
 Run the command line from this repo and type:
